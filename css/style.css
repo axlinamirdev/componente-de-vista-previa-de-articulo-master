@@ -21,6 +21,10 @@ html{
 body{
 	font-family: 'Manrope', sans-serif;
 	font-size: var(--font);
+	display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
 }
 
 h1{
