@@ -1,0 +1,106 @@
+:root{
+	--very-gray-blue: hsl(217, 19%, 35%);
+	--dark-blue: hsl(214, 17%, 51%);
+	--gray-blue: hsl(212, 23%, 69%);
+	--light-blue: hsl(210, 46%, 95%);
+	--font: 1.3rem;
+	--font-normal: 500;
+	--font-bold: 700;
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: 'Manrope', sans-serif;
+	font-size: var(--font);
+}
+
+h1{
+	font-weight: var(--font-bold);
+	color: var(--very-gray-blue);
+	font-size: 1.9rem;
+	line-height: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.cuadro-img{
+	width: 100%;
+	height: 250px;
+	background: url("../images/drawers.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cuadro-body{
+	padding: 50px 30px;
+}
+
+.cuadro-body p{
+	font-size: 1.6rem;
+	color: var(--dark-blue);
+}
+
+.cuadro-footer{
+	display: flex;
+    flex-direction: row;
+   	padding: 0 30px;
+   	justify-content: space-between;
+}
+
+.cuadro-info{
+	display: inherit;
+	align-items: center;
+}
+
+.cuadro-footer .img-avatar{
+	width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.footer-share{
+	align-self: center;
+	background-color: var(--light-blue);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-subtitle .subtitle-name{
+	font-weight: var(--font-bold);
+	color: var(--very-gray-blue);
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.footer-subtitle .subtitle-date{
+	color: var(--gray-blue);
+	font-size: 1.6rem;
+}
+
+.footer-share img{
+	width: 20px;
+}
+
+
+
+
+
+
