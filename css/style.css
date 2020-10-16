@@ -144,6 +144,12 @@ body{
 	margin-right: 18px;
 }
 
+.cuadro-share .share-arrow i{
+	position: absolute;
+    top: 64px;
+    left: 170px;
+    color: var(--very-gray-blue);
+}
 
 
 
