@@ -16,28 +16,61 @@
 <body>
 	<main class="container">
 		<div class="cuadro-img"></div>
-		<div class="cuadro-body">
-			<div>
-				<h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-				<p class="description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
-			</div>
-			<div class="cuadro-footer">
-				<div class="cuadro-info">
-					<figure>
-						<img class="img-avatar" src="images/avatar-michelle.jpg" alt="">
-					</figure>
-					<div class="footer-subtitle">
-						<h1 class="subtitle-name">Michelle Appleton</h1>
-						<p class="subtitle-date">28 Jun 2020</p>
+		<div class="container-body">
+			<div class="cuadro-body">
+				<div>
+					<h1 class="cuadro-title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+					<p class="description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+				</div>
+				<div class="cuadro-footer">
+					<div class="cuadro-info">
+						<figure>
+							<img class="img-avatar" src="images/avatar-michelle.jpg" alt="">
+						</figure>
+						<div class="footer-subtitle">
+							<h1 class="subtitle-name">Michelle Appleton</h1>
+							<p class="subtitle-date">28 Jun 2020</p>
+						</div>
+					</div>
+					<div class="footer-share">
+						<figure>
+							<img src="images/icon-share.svg" alt="Compartir" id="imgShare">
+						</figure>
 					</div>
 				</div>
-				<div class="footer-share">
-					<figure>
-						<img src="images/icon-share.svg" alt="Compartir">
-					</figure>
-				</div>
+			</div>
+			<div class="cuadro-share">
+				<span class="share-text">SHARE</span>
+				<figure>
+					<img src="images/icon-facebook.svg" alt="Facebook"/>
+				</figure>
+				<figure>
+					<img src="images/icon-twitter.svg" alt="Twitter" />
+				</figure>
+				<figure>
+					<img src="images/icon-pinterest.svg" alt="Pinterest" />
+				</figure>
 			</div>
 		</div>
 	</main>
+	<script>
+		let imgShare = document.getElementById("imgShare");
+		let cuadroShare = document.getElementsByClassName("cuadro-share")[0];
+
+		imgShare.addEventListener("click", (event) => {
+			event.preventDefault()
+
+			let visibilidad = cuadroShare.style.visibility;
+			
+			if(visibilidad==="visible")
+				cuadroShare.style.visibility = "hidden"
+			else
+				cuadroShare.style.visibility = "visible"
+		})
+
+		window.onload = function() {
+		  	screenAncho = screen.width
+		}
+	</script>
 </body>
 </html>

@@ -27,7 +27,7 @@ body{
     height: 100vh;
 }
 
-h1{
+.cuadro-body .cuadro-title{
 	font-weight: var(--font-bold);
 	color: var(--very-gray-blue);
 	font-size: 1.9rem;
@@ -38,6 +38,9 @@ h1{
 .container{
 	display: flex;
 	flex-direction: column;
+	border-radius: 20px;
+	border: 1px solid #e4e4e4;
+	box-shadow: 2px 13px 23px -9px rgb(178 192 199 / 75%);
 }
 
 .cuadro-img{
@@ -46,10 +49,12 @@ h1{
 	background: url("../images/drawers.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .cuadro-body{
-	padding: 50px 25px;
+	padding: 50px 25px 20px;
 }
 
 .cuadro-body .description{
@@ -85,6 +90,8 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    z-index: 100;
+    cursor: pointer;
 }
 
 .footer-subtitle .subtitle-name{
@@ -103,6 +110,39 @@ h1{
 	width: 20px;
 }
 
+.container-body{
+	position: relative;
+}
+
+
+.cuadro-share{
+	width: 100%;
+	height: 100px;
+	background-color: var(--very-gray-blue);
+	padding: 0;
+	display: flex;
+	align-items: center;
+	border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    left: 0;
+    justify-content: flex-start;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.cuadro-share .share-text{
+	color: var(--gray-blue);
+	font-size: 2.2rem;
+    margin: 0 30px;
+}
+
+.cuadro-share figure img{
+	width: 30px;
+	margin-right: 18px;
+}
 
 
 
