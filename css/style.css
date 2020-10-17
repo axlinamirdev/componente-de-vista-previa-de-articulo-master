@@ -149,6 +149,7 @@ body{
     top: 64px;
     left: 170px;
     color: var(--very-gray-blue);
+    display: none;
 }
 
 

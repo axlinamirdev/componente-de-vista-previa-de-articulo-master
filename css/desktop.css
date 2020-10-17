@@ -16,7 +16,7 @@ body{
 }
 
 .cuadro-body{
-    padding: 50px 30px 20px;
+    padding: 50px 50px 20px;
 }
 
 .cuadro-img {
@@ -32,4 +32,8 @@ body{
     justify-content: center;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.cuadro-share .share-arrow i{
+    display: block;
 }
